@@ -67,3 +67,21 @@ bindkey -M viins '<seq>' sudo-command-line
 
 where `<seq>` is the sequence you want to use. You can find the keyboard sequence
 by running `cat` and pressing the keyboard combination you want to use.
+
+## Installation
+
+### As an "oh-my-zsh" plugin
+
+Clone the repository into ```$ZSH_CUSTOM/plugins```:
+
+```console
+$ git clone https://github.com/none9632/zsh-sudo.git $ZSH_CUSTOM/plugins/
+```
+
+Edit your ```~/.zshrc``` file by appending ```zsh-sudo``` to the ```plugins=()``` list:
+
+```sh
+plugins=(<your other plugins> zsh-sudo)
+```
+
+Open up a new session to see changes.
